@@ -1,16 +1,52 @@
-# React + Vite
+# 🔐 Random String Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive **Random String Generator Web App** built using **React + Tailwind CSS**.  
+It allows users to generate secure random strings based on customizable options like length, uppercase, lowercase, numbers, and symbols.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- Adjustable string length using slider
+- Include/exclude:
+  - Uppercase letters
+  - Lowercase letters
+  - Numbers
+  - Symbols
+- Real-time string generation using React Hooks
+- One-click copy to clipboard
+- Fully responsive (Mobile + Desktop)
+- Initial auto-generation on page load
+- Smart UX (prevents empty selection)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React (Vite)**
+- **Tailwind CSS**
+- **JavaScript (ES6+)**
+
+---
+
+## ⚛️ React Hooks Used
+
+| Hook | Purpose |
+|------|--------|
+| `useState` | Manage UI state (length, options, output) |
+| `useCallback` | Optimize string generation function |
+| `useEffect` | Auto-generate string on initial load |
+
+---
+
+## How It Works
+
+1. User selects:
+   - String length
+   - Character types (uppercase, lowercase, etc.)
+2. App builds a character pool dynamically
+3. Random characters are selected using `Math.random()`
+4. Final string is displayed instantly
+5. User can copy the string using the clipboard button
+
+---
